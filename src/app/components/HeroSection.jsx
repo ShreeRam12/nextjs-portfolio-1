@@ -7,13 +7,7 @@ import { axios } from "axios";
 import Link from "next/link";
 
 const HeroSection = () => {
-  const handleDownload = async () => {
-    try {
-      await axios.get('/api/download');
-    } catch (error) {
-      console.error('Error downloading file:', error);
-    }
-  };
+  
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -51,8 +45,7 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <Link
-              href="/api/download" passHref
-              onClick={handleDownload}
+              href="/api/download"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
