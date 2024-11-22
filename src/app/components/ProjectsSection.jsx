@@ -64,7 +64,7 @@ const projectsData = [
     id: 7,
     title: "HaodaMart - Online Shopping Website",
     description: "Online Shopping Website for HaodaPay Solutions",
-    image: "/images/projects/HaodaMart_Img.png",
+    image: "/images/projects/Haodamart_Img.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "https://haodamart.com/",
